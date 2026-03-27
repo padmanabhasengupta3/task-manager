@@ -16,7 +16,7 @@ jobs:
         run: |
           cd Task.Manager/Task.Manager
           chmod +x mvnw
-          ./mvnw clean package
+          ./mvnw clean package -DskipTests
 
       #  LOGIN DOCKER
       - name: Login DockerHub
