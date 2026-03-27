@@ -15,6 +15,7 @@ jobs:
       - name: Build Backend JAR
         run: |
           cd Task.Manager/Task.Manager
+          chmod +x mvnw
           ./mvnw clean package
 
       #  LOGIN DOCKER
